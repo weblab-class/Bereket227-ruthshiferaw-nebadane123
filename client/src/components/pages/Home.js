@@ -7,7 +7,7 @@ const Home = ({ userId, handleLogin, handleLogout }) => {
   return (
     <div>
       <img src="college1 2.png" />
-      <NavBar />
+      {/* <NavBar /> */}
       {userId ? (
         <GoogleLogout
           clientId={GOOGLE_CLIENT_ID}
@@ -23,7 +23,7 @@ const Home = ({ userId, handleLogin, handleLogout }) => {
           onFailure={(err) => console.log(err)}
         />
       )}
-
+<div> home </div>
       {/* <reviewsfrompaststudents/> */}
     </div>
   );

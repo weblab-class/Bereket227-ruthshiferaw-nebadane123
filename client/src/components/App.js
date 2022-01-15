@@ -5,6 +5,12 @@ import NotFound from "./pages/NotFound.js";
 import CollgeInfo from "./pages/CollegeInfo.js";
 import Home from "./pages/Home.js";
 import NavBar from "./modules/NavBar.js";
+import columbia from "./pages/columbia.js";
+import Harvard from "./pages/Harvard.js";
+import Stanford from "./pages/Stanford.js";
+import Yale from "./pages/Yale.js";
+import MIT from "./pages/MIT.js";
+import Princeton from "./pages/Princeton.js";
 
 import "../utilities.css";
 
@@ -43,16 +49,17 @@ const App = () => {
 
   return (
     <>
+     <NavBar/>
       <Router>
-        <NavBar/>
+        
         <Home path="/" handleLogin={handleLogin} handleLogout={handleLogout} userId={userId} />
-        <NotFound default />
-        <Columbia path="/collegeInfo/columbia" />
+        {/* <NotFound default />
+        <columbia path="/collegeInfo/columbia" />
         <Harvard path="/collegeInfo/Harvard" />
         <MIT path="/collegeInfo/MIT" />
         <Princeton path="/collegeInfo/Princeton" />
         <Stanford path="/collegeInfo/Stanford" />
-        <Yale path="/collegeInfo/Yale" />
+        <Yale path="/collegeInfo/Yale" /> */}
         
       </Router>
     </>
