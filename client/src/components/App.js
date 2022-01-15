@@ -3,6 +3,8 @@ import { Router } from "@reach/router";
 import NotFound from "./pages/NotFound.js";
 import Skeleton from "./pages/Skeleton.js";
 import CollgeInfo from "./pages/CollegeInfo.js";
+import Home from "./pages/Home.js";
+import NavBar from "./modules/NavBar.js";
 
 import "../utilities.css";
 
@@ -42,6 +44,7 @@ const App = () => {
   return (
     <>
       <Router>
+        <NavBar />
         <Skeleton path="/" handleLogin={handleLogin} handleLogout={handleLogout} userId={userId} />
         <NotFound default />
         <Columbia path="/collegeInfo/columbia" />
@@ -50,6 +53,7 @@ const App = () => {
         <Princeton path="/collegeInfo/Princeton" />
         <Stanford path="/collegeInfo/Stanford" />
         <Yale path="/collegeInfo/Yale" />
+        <Home />
       </Router>
     </>
   );
