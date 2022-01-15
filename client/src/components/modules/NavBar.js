@@ -1,6 +1,9 @@
 import React from "react";
-
+import GoogleLogin, { GoogleLogout } from "react-google-login";
 import { Link } from "@reach/router";
+import "../../utilities.css";
+import "./Skeleton.css";
+
 import "./NavBar.css";
 
 const NavBar = () => {
