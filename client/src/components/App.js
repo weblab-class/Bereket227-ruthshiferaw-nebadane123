@@ -44,7 +44,7 @@ const App = () => {
   return (
     <>
       <Router>
-        <NavBar />
+        <NavBar/>
         <Skeleton path="/" handleLogin={handleLogin} handleLogout={handleLogout} userId={userId} />
         <NotFound default />
         <Columbia path="/collegeInfo/columbia" />
@@ -53,7 +53,7 @@ const App = () => {
         <Princeton path="/collegeInfo/Princeton" />
         <Stanford path="/collegeInfo/Stanford" />
         <Yale path="/collegeInfo/Yale" />
-        <Home />
+        
       </Router>
     </>
   );
