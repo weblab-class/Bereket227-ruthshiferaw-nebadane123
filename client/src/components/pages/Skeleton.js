@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import GoogleLogin, { GoogleLogout } from "react-google-login";
+import Home from "./Home.js";
 
 import "../../utilities.css";
 import "./Skeleton.css";
@@ -10,6 +11,7 @@ const GOOGLE_CLIENT_ID = "32823633498-lv55i49eklchh7o1s494bdebe34stcsb.apps.goog
 const Skeleton = ({ userId, handleLogin, handleLogout }) => {
   return (
     <>
+    <Home/>
       {userId ? (
         <GoogleLogout
           clientId={GOOGLE_CLIENT_ID}
