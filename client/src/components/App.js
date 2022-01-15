@@ -44,6 +44,12 @@ const App = () => {
       <Router>
         <Skeleton path="/" handleLogin={handleLogin} handleLogout={handleLogout} userId={userId} />
         <NotFound default />
+        <Columbia path="/collegeInfo/columbia" />
+        <Harvard path="/collegeInfo/Harvard" />
+        <MIT path="/collegeInfo/MIT" />
+        <Princeton path="/collegeInfo/Princeton" />
+        <Stanford path="/collegeInfo/Stanford" />
+        <Yale path="/collegeInfo/Yale" />
       </Router>
     </>
   );

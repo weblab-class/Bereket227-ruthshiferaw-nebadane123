@@ -1,6 +1,8 @@
 import React from "react";
 import "../../utilities.css";
 import "./CollegeInfo.css";
+import { Link } from "@reach/router";
+
 const CollegeInfo = () => {
   return (
     <section className="allistcontainer">
@@ -8,37 +10,55 @@ const CollegeInfo = () => {
       <section className="collegecontainer">
         <section className="listitem">
           <div className="imageholder">
-            <img scr="columbia.png" />
+            <Link to="/CollegeInfo/columbia">
+              {" "}
+              <img scr="columbia.png" />
+            </Link>
           </div>
           <div className="list name">Columbia University</div>
         </section>
         <section className="listitem">
           <div className="imageholder">
-            <img scr="harvard.png" />
+            <Link to="/CollgeInfo/Harvard">
+              {" "}
+              <img scr="harvard.png" />
+            </Link>
           </div>
           <div className="list name">Harvard University</div>
         </section>
         <section className="listitem">
           <div className="imageholder">
-            <img scr="MIT.png" />
+            <Link to="/CollegeInfo/MIT">
+              {" "}
+              <img scr="MIT.png" />
+            </Link>
           </div>
           <div className="list name">MIT</div>
         </section>
         <section className="listitem">
           <div className="imageholder">
-            <img></img>
+            <Link to="/CollegeInfo/Princeton">
+              {" "}
+              <img scr="princeton.png" />
+            </Link>
           </div>
           <div className="list name">Princeton University</div>
         </section>
         <section className="listitem">
           <div className="imageholder">
-            <img scr="princeton.png" />
+            <Link to="CollegeInfo/Stanford">
+              {" "}
+              <img scr="stanford.png" />
+            </Link>
           </div>
           <div className="list name">Stanford University</div>
         </section>
         <section className="listitem">
           <div className="imageholder">
-            <img scr="yale.png" />
+            <Link to="/CollegeInfo/Yale">
+              {" "}
+              <img scr="yale.png" />
+            </Link>
           </div>
           <div className="list name">Yale University</div>
         </section>
