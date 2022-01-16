@@ -2,6 +2,12 @@ import React from "react";
 import "../../utilities.css";
 import "./CollegeInfo.css";
 import { Link } from "@reach/router";
+import columbia from "./columbia.png";
+import harvard from "./harvard.png";
+import stanford from "./stanford.png";
+import MIT from "./MIT.png";
+import princeton from "./princeton.png";
+import yale from "./yale.png";
 
 const CollegeInfo = () => {
   return (
@@ -12,7 +18,7 @@ const CollegeInfo = () => {
           <div className="imageholder">
             <Link to="/CollegeInfo/columbia">
               {" "}
-              <img scr="columbia.png" />
+              <img scr={columbia} />
             </Link>
           </div>
           <div className="list name">Columbia University</div>
@@ -21,7 +27,7 @@ const CollegeInfo = () => {
           <div className="imageholder">
             <Link to="/CollgeInfo/Harvard">
               {" "}
-              <img scr="harvard.png" />
+              <img scr={harvard} />
             </Link>
           </div>
           <div className="list name">Harvard University</div>
@@ -30,16 +36,16 @@ const CollegeInfo = () => {
           <div className="imageholder">
             <Link to="/CollegeInfo/MIT">
               {" "}
-              <img scr="MIT.png" />
+              <img scr={MIT} />
             </Link>
           </div>
-          <div className="list name">MIT</div>
+          <div className="l ist name">MIT</div>
         </section>
         <section className="listitem">
           <div className="imageholder">
             <Link to="/CollegeInfo/Princeton">
               {" "}
-              <img scr="princeton.png" />
+              <img scr={princeton} />
             </Link>
           </div>
           <div className="list name">Princeton University</div>
@@ -48,7 +54,7 @@ const CollegeInfo = () => {
           <div className="imageholder">
             <Link to="CollegeInfo/Stanford">
               {" "}
-              <img scr="stanford.png" />
+              <img scr={stanford} />
             </Link>
           </div>
           <div className="list name">Stanford University</div>
@@ -57,7 +63,7 @@ const CollegeInfo = () => {
           <div className="imageholder">
             <Link to="/CollegeInfo/Yale">
               {" "}
-              <img scr="yale.png" />
+              <img scr={yale} />
             </Link>
           </div>
           <div className="list name">Yale University</div>
