@@ -3,9 +3,10 @@
 
 
 .NavBar-container {
-    padding: var(--s) var(--m) ;
+    padding: var(--s) var(--m);
     background-color: #AAAAAA ;
-    width: 100%;
+    /* width: 100%; */
+    margin: 0%;
     /* display: flex;
    ; */
 }
@@ -16,10 +17,12 @@
 } */
 
 .NavBar-title {
-    color: #0000;
+    color: white;
     font: "OpenSans"; 
-    font-size: 50 px;
+    font-size: xx-large;
     font-weight: bold;
+    /* bottom: 50%; */
+    /* padding: 8 px ; */
 
 }
 
@@ -31,4 +34,6 @@
     font-size: 20 px;
     display: flex;
     justify-content: space-evenly;
+    text-decoration: none;
 }
+

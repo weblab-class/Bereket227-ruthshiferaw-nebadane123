@@ -2,14 +2,17 @@ import React from "react";
 import NavBar from "../modules/NavBar";
 import GoogleLogin, { GoogleLogout } from "react-google-login";
 import homepic from "./homepic1.png";
+import Testimonials from "./Testimonials.js";
+import "./Home.css";
 
 const GOOGLE_CLIENT_ID = "32823633498-lv55i49eklchh7o1s494bdebe34stcsb.apps.googleusercontent.com";
 
 const Home = ({ userId, handleLogin, handleLogout }) => {
   return (
-    <div>
-      <img src={homepic} />
-    
+    <div className="Homepic-container">
+      <img className= "Home-img" src={homepic} />
+        {/* <NavBar/> */}
+      <div className="top-right">
       {userId ? (
         <GoogleLogout
           clientId={GOOGLE_CLIENT_ID}
@@ -25,8 +28,13 @@ const Home = ({ userId, handleLogin, handleLogout }) => {
           onFailure={(err) => console.log(err)}
         />
       )}
-<div> home </div>
-      {/* <reviewsfrompaststudents/> */}
+      </div>  
+      <div className="centered"> Trying to apply to colleges in the US? </div>
+      <div className="lower-centered">
+      We're here to give you tips and tricks on how to successfully create a college application as an international student
+      </div>
+{/* <div> hi! </div> */}
+      <Testimonials/>
     </div>
   );
 };
