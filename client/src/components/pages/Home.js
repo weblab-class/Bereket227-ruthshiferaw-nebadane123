@@ -1,13 +1,15 @@
 import React from "react";
 import NavBar from "../modules/NavBar";
 import GoogleLogin, { GoogleLogout } from "react-google-login";
+import homepic from "./homepic1.png";
 
 const GOOGLE_CLIENT_ID = "32823633498-lv55i49eklchh7o1s494bdebe34stcsb.apps.googleusercontent.com";
+
 const Home = ({ userId, handleLogin, handleLogout }) => {
   return (
     <div>
-      <img src="college1 2.png" />
-      {/* <NavBar /> */}
+      <img src={homepic} />
+    
       {userId ? (
         <GoogleLogout
           clientId={GOOGLE_CLIENT_ID}
