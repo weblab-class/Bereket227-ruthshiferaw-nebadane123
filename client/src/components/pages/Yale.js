@@ -7,7 +7,7 @@ const Yale = () => {
   return (
     <div>
       <div>Yale University</div>
-      <ol>
+      <ul>
         <li>City,State- New Haven, Connecticut</li>
         <li>Number of applicant- 35,301</li>
         <li>Acceptance rate- 6%</li>
@@ -16,7 +16,7 @@ const Yale = () => {
         <li>International Students- 17%</li>
         <li>Diversity- Diverse</li>
         <li>Financial aid- Gives full aid</li>
-      </ol>
+      </ul>
     </div>
   );
 };

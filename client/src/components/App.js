@@ -18,6 +18,7 @@ import { socket } from "../client-socket.js";
 
 import { get, post } from "../utilities";
 import CollegeInfo from "./pages/CollegeInfo.js";
+import Forum from "./pages/Forum.js";
 
 /**
  * Define the "App" component
@@ -54,6 +55,7 @@ const App = () => {
       <Router>
         <Home path="/" handleLogin={handleLogin} handleLogout={handleLogout} userId={userId} />
         <CollegeInfo path="/CollegeInfo" component={CollegeInfo} />
+        <Forum path="/Forum" component={Forum} />
         {/* <NotFound default />
         <columbia path="/collegeInfo/columbia" />
         <Harvard path="/collegeInfo/Harvard" />
