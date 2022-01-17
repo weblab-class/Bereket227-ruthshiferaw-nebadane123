@@ -1,5 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap");
 .listitle {
   font-size: larger;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  right: 50%;
+  margin-top: 50px;
+}
+.collegecontainer {
+  margin-top: 50px;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin: 0px 100px 10px 100px;
+}
+.img {
+  size: 50%;
+  width: 20%;
   align-items: center;
+  height: auto;
+  display: grid;
+  vertical-align: middle;
+  margin-top: 16px;
+}
+.listitem {
+  border: 0.3px solid rgb(200, 200, 200);
+  border-radius: 2px;
+  margin: 10px;
+  font-size: 30px;
+  text-align: center;
+  box-shadow: 2px 2px 2px rgb(0 0 0 / 10%);
+  margin-top: 100px;
 }
