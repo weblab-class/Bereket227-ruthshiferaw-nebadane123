@@ -5,7 +5,7 @@ import NotFound from "./pages/NotFound.js";
 import CollgeInfo from "./pages/CollegeInfo.js";
 import Home from "./pages/Home.js";
 import NavBar from "./modules/NavBar.js";
-import columbia from "./pages/columbia.js";
+import Columbia from "./pages/Columbia.js";
 import Harvard from "./pages/Harvard.js";
 import Stanford from "./pages/Stanford.js";
 import Yale from "./pages/Yale.js";
@@ -56,13 +56,13 @@ const App = () => {
         <Home path="/" handleLogin={handleLogin} handleLogout={handleLogout} userId={userId} />
         <CollegeInfo path="/CollegeInfo" component={CollegeInfo} />
         <Forum path="/Forum" component={Forum} />
-        {/* <NotFound default />
-        <columbia path="/collegeInfo/columbia" />
-        <Harvard path="/collegeInfo/Harvard" />
-        <MIT path="/collegeInfo/MIT" />
-        <Princeton path="/collegeInfo/Princeton" />
-        <Stanford path="/collegeInfo/Stanford" />
-        <Yale path="/collegeInfo/Yale" /> */}
+        <Columbia path="/Columbia" component={Columbia} />
+        <Harvard path="/Harvard" component={Harvard} />
+        <MIT path="/MIT" />
+        <Princeton path="/Princeton" component={Princeton} />
+        <Stanford path="/Stanford" component={Stanford} />
+        <Yale path="/Yale" component={Yale} />
+        <NotFound default />
       </Router>
     </>
   );

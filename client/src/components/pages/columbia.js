@@ -3,7 +3,7 @@ import "../../utilities.css";
 import "./CollegeInfo.css";
 import { Link } from "@reach/router";
 
-const columbia = () => {
+const Columbia = () => {
   return (
     <div>
       <div>Columbia University</div>
@@ -21,4 +21,4 @@ const columbia = () => {
   );
 };
 
-export default columbia;
+export default Columbia;
