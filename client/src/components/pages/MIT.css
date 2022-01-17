@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap");
+.title {
+  font-size: larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  right: 50%;
+  margin-top: 40px;
+  font-family: Petrona;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+}
+.list {
+  font-size: larger;
+  font-family: monospace;
+  margin-top: 20px;
+  font-family: Petrona;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 50px;
+}
