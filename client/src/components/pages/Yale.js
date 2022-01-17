@@ -21,6 +21,13 @@ const Yale = () => {
           <li>Diversity- Diverse</li>
           <li>Financial aid- Gives full aid</li>
         </ul>
+        <div className="addinfo">
+          {
+            <a href="https://admissions.yale.edu/first-year-application-process">
+              For further information click here
+            </a>
+          }
+        </div>
       </div>
     </div>
   );

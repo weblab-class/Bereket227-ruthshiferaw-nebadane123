@@ -20,6 +20,9 @@ const Harvard = () => {
           <li>Diversity- Diverse</li>
           <li>Financial aid- Gives full aid</li>
         </ul>
+        <div className="addinfo">
+          {<a href="https://college.harvard.edu/admissions">For further information click here</a>}
+        </div>
       </div>
     </div>
   );

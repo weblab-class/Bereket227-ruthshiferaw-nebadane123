@@ -20,6 +20,13 @@ const Princeton = () => {
           <li>Diversity- Diverse</li>
           <li>Financial aid- Gives full aid</li>
         </ul>
+        <div className="addinfo">
+          {
+            <a href="https://admission.princeton.edu/how-apply">
+              For further information click here
+            </a>
+          }
+        </div>
       </div>
     </div>
   );

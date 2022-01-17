@@ -21,6 +21,13 @@ const MIT = () => {
           <li>Diversity- Diverse</li>
           <li>Financial aid- Gives full aid</li>
         </ul>
+        <div className="addinfo">
+          {
+            <a href="https://mitadmissions.org/apply/firstyear/deadlines-requirements/">
+              For further information click here
+            </a>
+          }
+        </div>
       </div>
     </div>
   );
