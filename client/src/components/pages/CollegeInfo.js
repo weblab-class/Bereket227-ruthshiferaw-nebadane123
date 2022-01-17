@@ -16,27 +16,27 @@ const CollegeInfo = () => {
         <div className="listitle">Find colleges that fit you here</div>
         <section className="listitem">
           <img className="img" src={columbia} />
-          <div className="list name">Columbia University</div>
+          <div className="listname">Columbia University</div>
         </section>
         <section className="listitem">
           <img className="img" src={harvard} />
-          <div className="list name">Harvard University</div>
+          <div className="listname">Harvard University</div>
         </section>
         <section className="listitem">
           <img className="img" src={MIT} />
-          <div className="list name">MIT University</div>
+          <div className="listname">MIT University</div>
         </section>
         <section className="listitem">
           <img className="img" src={princeton} />
-          <div className="list name">Princeton University</div>
+          <div className="listname">Princeton University</div>
         </section>
         <section className="listitem">
           <img className="img" src={stanford} />
-          <div className="list name">Stanford University</div>
+          <div className="listname">Stanford University</div>
         </section>
         <section className="listitem">
           <img className="img" src={yale} />
-          <div className="list name">Yale University</div>
+          <div className="listname">Yale University</div>
         </section>
       </section>
     </>
