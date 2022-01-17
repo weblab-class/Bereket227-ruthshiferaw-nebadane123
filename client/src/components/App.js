@@ -17,6 +17,7 @@ import "../utilities.css";
 import { socket } from "../client-socket.js";
 
 import { get, post } from "../utilities";
+import CollegeInfo from "./pages/CollegeInfo.js";
 
 /**
  * Define the "App" component
@@ -49,10 +50,10 @@ const App = () => {
 
   return (
     <>
-     <NavBar/>
+      <NavBar />
       <Router>
-        
         <Home path="/" handleLogin={handleLogin} handleLogout={handleLogout} userId={userId} />
+        <CollegeInfo path="/CollegeInfo" component={CollegeInfo} />
         {/* <NotFound default />
         <columbia path="/collegeInfo/columbia" />
         <Harvard path="/collegeInfo/Harvard" />
@@ -60,7 +61,6 @@ const App = () => {
         <Princeton path="/collegeInfo/Princeton" />
         <Stanford path="/collegeInfo/Stanford" />
         <Yale path="/collegeInfo/Yale" /> */}
-        
       </Router>
     </>
   );
