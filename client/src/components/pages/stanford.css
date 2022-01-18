@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap");
 .stanfordimg {
-  width: 5%;
+  align-items: center;
+  margin-top: 16px;
+  margin-right: 0px;
+  margin-left: 270px;
+  width: 60%;
 }
+
 .title {
   font-size: larger;
   font-family: Verdana, Geneva, Tahoma, sans-serif;

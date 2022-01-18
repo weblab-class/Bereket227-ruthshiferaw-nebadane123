@@ -8,7 +8,7 @@ import "./yale.css";
 const Yale = () => {
   return (
     <div>
-      <img className="insideimg" src={yalepic1} />
+      <img className="yaleimg" src={yalepic1} />
       <div className="title">Yale University</div>
       <div className="list">
         <ul>
