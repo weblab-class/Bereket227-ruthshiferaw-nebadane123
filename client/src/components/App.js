@@ -56,7 +56,11 @@ const App = () => {
       <Router>
         <Home path="/" handleLogin={handleLogin} handleLogout={handleLogout} userId={userId} />
         <CollegeInfo path="/CollegeInfo" component={CollegeInfo} />
+<<<<<<< HEAD
         <Forum path="/Forum/" component={Forum} />
+=======
+
+>>>>>>> 79f8cc0d781745e4c8021c20f5743f43d1af9a31
         <Columbia path="/Columbia" component={Columbia} />
         <Harvard path="/Harvard" component={Harvard} />
         <MIT path="/MIT" />
