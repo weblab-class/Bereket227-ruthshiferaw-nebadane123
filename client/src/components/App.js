@@ -55,7 +55,7 @@ const App = () => {
       <Router>
         <Home path="/" handleLogin={handleLogin} handleLogout={handleLogout} userId={userId} />
         <CollegeInfo path="/CollegeInfo" component={CollegeInfo} />
-        <Forum path="/Forum" component={Forum} />
+
         <Columbia path="/Columbia" component={Columbia} />
         <Harvard path="/Harvard" component={Harvard} />
         <MIT path="/MIT" />
