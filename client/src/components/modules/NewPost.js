@@ -58,13 +58,23 @@ const NewStory = (props) => {
     const addStory = (value) => {
       const body = { content: value };
       post("/api/story", body).then((story) => {
-        // display this story on the screen
-        props.addNewStory(story);
+          props.addNewStory(story);
       });
     };
   
-    return <NewPostInput defaultText="New Story" onSubmit={addStory} />;
+    return <NewPost defaultText="New Story" onSubmit={addStory} />;
   };
 
-  export default NewStory;
+  const NewComment = (props) => {
+    const addComment = (value) => {
+      const body = { content: value };
+      post("/api/comment", body).then((comment) => {
+          props.addNewComment(comment);
+      });
+    };
+  
+    return <NewPost defaultText="Comment Here!" onSubmit={addComment} />;
+  };
+
+  export default {NewStory, NewComment};
   
