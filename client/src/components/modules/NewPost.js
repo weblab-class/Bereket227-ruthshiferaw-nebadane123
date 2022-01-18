@@ -1,11 +1,6 @@
 import React, { useState } from "react";
-
-/**
- * @typedef ContentObject
- * @property {string} _id of story/comment
- * @property {string} user_name
- * @property {string} content of the story/comment
- */
+import { post } from "../../utilities";
+import "./NewPost.css";
 
 const NewPost=(props) => {
  const [value, setValue] = useState("");
@@ -17,6 +12,7 @@ const NewPost=(props) => {
     props.onSubmit && props.onSubmit(value);
     setValue("");
  };
+
  return (
     <div className="u-flex">
       <input
@@ -24,11 +20,11 @@ const NewPost=(props) => {
         placeholder={props.defaultText}
         value={value}
         onChange={handleChange}
-        // className="NewPostInput-input"
+        className="NewPostInput-input"
       />
       <button
         type="submit"
-        // className="NewPostInput-button u-pointer"
+        className="NewPostInput-button u-pointer"
         value="Submit"
         onClick={handleSubmit}
       >
@@ -62,12 +58,12 @@ const NewStory = (props) => {
       });
     };
   
-    return <NewPost defaultText="New Story" onSubmit={addStory} />;
+    return <NewPost defaultText="Post Questions/Thoughts Here" onSubmit={addStory} />;
   };
 
   const NewComment = (props) => {
     const addComment = (value) => {
-      const body = { content: value };
+      const body = {parent: props.storyId, content: value };
       post("/api/comment", body).then((comment) => {
           props.addNewComment(comment);
       });
@@ -76,5 +72,5 @@ const NewStory = (props) => {
     return <NewPost defaultText="Comment Here!" onSubmit={addComment} />;
   };
 
-  export default {NewStory, NewComment};
+  export {NewStory, NewComment};
   

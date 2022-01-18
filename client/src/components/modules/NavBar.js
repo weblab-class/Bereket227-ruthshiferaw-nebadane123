@@ -13,7 +13,7 @@ const NavBar = () => {
   return (
     <nav className="NavBar-container">
       <span>
-        <div className="NavBar-title"> ICAH </div>
+        <div className="NavBar-title"> ICAN </div>
         <div className="Link-title">
           <Link to="/"> Home </Link>
           <Link to="/CollegeInfo/"> College Info </Link>

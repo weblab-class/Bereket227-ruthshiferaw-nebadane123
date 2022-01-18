@@ -1,16 +1,17 @@
-import React from "react";
+import React , { Component } from "react";
 import NavBar from "../modules/NavBar";
 import GoogleLogin, { GoogleLogout } from "react-google-login";
-import homepic from "./homepic1.png";
+import homepic1 from "./homepic1.png";
 import Testimonials from "./Testimonials.js";
 import "./Home.css";
 
 const GOOGLE_CLIENT_ID = "32823633498-lv55i49eklchh7o1s494bdebe34stcsb.apps.googleusercontent.com";
 
 const Home = ({ userId, handleLogin, handleLogout }) => {
+    document.title="Home"
   return (
     <div className="Homepic-container">
-      <img className= "Home-img" src={homepic} />
+      <img className= "Home-img" src={homepic1} />
         {/* <NavBar/> */}
       <div className="top-right">
       {userId ? (

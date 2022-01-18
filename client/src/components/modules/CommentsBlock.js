@@ -1,21 +1,7 @@
 import React from "react";
 import SingleComment from "./SingleComment.js";
 import { NewComment } from "./NewPost.js";
-
-/**
- * @typedef ContentObject
- * @property {string} _id of story/comment
- * @property {string} user_name
- * @property {string} content of the story/comment
- */
-
-/**
- * Component that holds all the comments for a story
- *
- * Proptypes
- * @param {ContentObject[]} comments
- * @param {ContentObject} story
- */
+import "./Card.css";
 
 const CommentsBlock = (props) => {
   return (
@@ -30,7 +16,7 @@ const CommentsBlock = (props) => {
             content={comment.content}
           />
         ))}
-        {/* <NewComment storyId={props.story._id} addNewComment={props.addNewComment} /> */}
+        <NewComment storyId={props.story._id} addNewComment={props.addNewComment} />
       </div>
     </div>
   );

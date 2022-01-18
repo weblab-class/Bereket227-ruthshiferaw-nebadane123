@@ -11,6 +11,7 @@ import yale from "./yale.png";
 import { Link } from "@reach/router";
 
 const CollegeInfo = () => {
+  document.title = "College Info";
   return (
     <>
       <section className="collegecontainer">
