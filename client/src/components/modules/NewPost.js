@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { post } from "../../utilities";
 import "./NewPost.css";
 
+
+
 const NewPost=(props) => {
  const [value, setValue] = useState("");
  const handleChange = (event) => {
@@ -17,7 +19,7 @@ const NewPost=(props) => {
     <div className="u-flex">
       <input
         type="text"
-        placeholder={props.defaultText}
+        // placeholder={props.defaultText}
         value={value}
         onChange={handleChange}
         className="NewPostInput-input"
@@ -32,23 +34,8 @@ const NewPost=(props) => {
       </button>
     </div>);
 };
-// return (
-//     <div>
-//     <input
-    
-//     />
-//     <button>
-//      Submit
-//     </button>
-
-//     </div>
-// )
-
-// const NewStory=() => {
-//  const addStory=() => {
-
-//  }
-// }
+     
+ 
 
 const NewStory = (props) => {
     const addStory = (value) => {
