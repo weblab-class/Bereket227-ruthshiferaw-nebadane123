@@ -29,7 +29,7 @@ const Home = ({ userId, handleLogin, handleLogout }) => {
         />
       )}
       </div>  
-      <div className="centered"> Trying to apply to colleges in the US? </div>
+      <div className="centered title-container"> Trying to apply to colleges in the US? </div>
       <div className="lower-centered">
       We're here to give you tips and tricks on how to successfully create a college application as an international student
       </div>

@@ -24,6 +24,7 @@ margin: 0%; */
     max-height: 100vh;
     object-fit: contain; */
     /* margin-left: .5%; */
+
   }
 
   .top-right {
@@ -48,6 +49,12 @@ font-size: 55px;
 color: white;
 /* line-height: 62px; */
   }
+
+.title-container{
+    background-color: rgb(158, 154, 154);
+    border-radius: 3%;
+    /* opacity: 0.2%; */
+}
 
   .lower-centered {
     z-index: 30;

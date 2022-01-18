@@ -17,8 +17,8 @@ const NavBar = () => {
         <div className="Link-title">
           <Link to="/"> Home </Link>
           <Link to="/CollegeInfo/"> College Info </Link>
-          <Link to="/forum/"> Forum </Link>
-          <Link to="/vlogs/"> Vlogs </Link>
+          <Link to="/Forum/"> Forum </Link>
+          <Link to="/Vlogs/"> Vlogs </Link>
         </div>
       </span>
     </nav>
