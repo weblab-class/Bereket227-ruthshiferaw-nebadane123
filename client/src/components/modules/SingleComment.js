@@ -14,7 +14,7 @@ const SingleComment=(props) => {
         
         <div> {props.content}</div>
         </span>
-    )
+    );
 };
 
 export default SingleComment;
