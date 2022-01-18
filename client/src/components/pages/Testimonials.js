@@ -1,5 +1,5 @@
 import React from "react";
-import testimonialpic1 from "./testimonialpic1.PNG";
+import testimonialpic1 from "./testimonialpic1.png";
 import "./testimonials.css";
 
 const Testimonials = (props) => {

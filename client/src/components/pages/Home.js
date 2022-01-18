@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "../modules/NavBar";
 import GoogleLogin, { GoogleLogout } from "react-google-login";
-import homepic from "./homepic1.PNG";
+import homepic from "./homepic1.png";
 import Testimonials from "./Testimonials.js";
 import "./Home.css";
 
