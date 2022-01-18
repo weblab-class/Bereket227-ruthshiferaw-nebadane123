@@ -19,3 +19,10 @@
   font-size: 30px;
   line-height: 50px;
 }
+.MITimg {
+  align-items: center;
+  margin-top: 16px;
+  margin-left: 150px;
+  width: 80%;
+  border: 10px;
+}

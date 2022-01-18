@@ -3,6 +3,7 @@ import "../../utilities.css";
 import "./CollegeInfo.css";
 import { Link } from "@reach/router";
 import stanfordpic1 from "./images/stanfordpic1.jpg";
+import "./stanford.css";
 
 const Stanford = () => {
   return (

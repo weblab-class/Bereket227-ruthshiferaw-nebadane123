@@ -3,6 +3,7 @@ import "../../utilities.css";
 import "./CollegeInfo.css";
 import { Link } from "@reach/router";
 import princetonpic1 from "./images/princetonpic1.jpg";
+import "./princeton.css";
 
 const Princeton = () => {
   return (
