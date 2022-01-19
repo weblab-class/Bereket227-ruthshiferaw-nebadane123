@@ -7,8 +7,7 @@ import { get } from "../../utilities";
 const Forum = () => {
   const [stories, setStories] = useState([]);
 
-  // called when the "Feed" component "mounts", i.e.
-  // when it shows up on screen
+  
   useEffect(() => {
     document.title = "Forum";
     get("/api/stories").then((storyObjs) => {
@@ -17,8 +16,7 @@ const Forum = () => {
     });
   }, []);
 
-  // this gets called when the user pushes "Submit", so their
-  // post gets added to the screen right away
+  
   const addNewStory = (storyObj) => {
     setStories([storyObj].concat(stories));
   };
