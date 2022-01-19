@@ -38,14 +38,14 @@ const NewPost=(props) => {
  
 
 const NewStory = (props) => {
-    const addStory = (value) => {
+    const addPost = (value) => {
       const body = { content: value };
       post("/api/story", body).then((story) => {
-          props.addNewStory(story);
+          props.addNewPost(story);
       });
     };
   
-    return <NewPost defaultText="Post Questions/Thoughts Here" onSubmit={addStory} />;
+    return <NewPost defaultText="Post Questions/Thoughts Here" onSubmit={addPost} />;
   };
 
   const NewComment = (props) => {

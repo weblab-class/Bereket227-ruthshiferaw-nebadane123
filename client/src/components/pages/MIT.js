@@ -9,7 +9,7 @@ const MIT = () => {
   return (
     <div>
       <img className="MITimg" src={MITpic1} />
-      <div className="title">MIT University</div>
+      <div className="title">MIT</div>
       <div className="list">
         <ul>
           <li>City,State- Cambridge, Massachussets</li>

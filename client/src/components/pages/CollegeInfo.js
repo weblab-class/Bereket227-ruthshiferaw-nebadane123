@@ -35,7 +35,7 @@ const CollegeInfo = () => {
             <img className="img" src={MIT} />
           </Link>
 
-          <div className="listname">MIT University</div>
+          <div className="listname">MIT</div>
         </section>
         <section className="listitem">
           <Link to="/Princeton">
