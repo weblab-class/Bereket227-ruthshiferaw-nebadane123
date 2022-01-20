@@ -1,7 +1,7 @@
 .Card-container{
     background-color: lightgray;
     border: gray;
-    border-radius: 10%;
+    /* border-radius: 10%; */
     justify-content: center;
 }
 

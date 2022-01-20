@@ -5,8 +5,8 @@ const SingleComment=(props) => {
     return (
                 
         <span> 
-            <div className="u-bold"> {props.creator_name} </div>
-            <div> {props.content}</div>
+            {/* <div className="u-bold"> {props.creator_name} </div> */}
+            <span> {props.creator_name + ": " + props.content} </span>
         </span>
     );
 };

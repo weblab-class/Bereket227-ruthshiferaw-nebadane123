@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import SingleStory from "./SingleStory.js";
 import CommentsBlock from "./CommentsBlock.js";
+import { get } from "../../utilities";
+
 import "./Card.css";
 
-const Card=() => {
+const Card=(props) => {
     const [comments, setComments] = useState([]);
 
    
