@@ -6,6 +6,7 @@ import "./NewPost.css";
 
 const NewPost=(props) => {
  const [value, setValue] = useState("");
+
  const handleChange = (event) => {
      setValue(event.target.value);
  };
@@ -19,7 +20,7 @@ const NewPost=(props) => {
     <div className="u-flex">
       <input
         type="text"
-        // placeholder={props.defaultText}
+        placeholder={props.defaultText}
         value={value}
         onChange={handleChange}
         className="NewPostInput-input"
@@ -59,5 +60,5 @@ const NewStory = (props) => {
     return <NewPost defaultText="Comment Here!" onSubmit={addComment} />;
   };
 
-  export {NewStory, NewComment};
+  export {NewComment, NewStory};
   

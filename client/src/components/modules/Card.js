@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import SingleStory from "./SingleStory.js";
 import CommentsBlock from "./CommentsBlock.js";
 import { get } from "../../utilities";
-
+// import {NewStory} from 
 import "./Card.css";
 
 const Card=(props) => {
@@ -25,6 +25,7 @@ const Card=(props) => {
         <div className="Card-container">
           <SingleStory _id={props._id} creator_name={props.creator_name} content={props.content} />
           <CommentsBlock story={props} comments={comments} addNewComment={addNewComment} />
+        
         </div>
       );
     };
