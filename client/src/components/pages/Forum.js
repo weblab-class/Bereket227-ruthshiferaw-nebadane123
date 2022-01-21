@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Card from "../modules/Card.js";
-import { NewStory} from "../modules/NewPost.js";
+import { NewStory } from "../modules/NewPost.js";
 
 import { get } from "../../utilities";
 
-const Forum = () => {
+const Forum = (props) => {
   const [stories, setStories] = useState([]);
 
-  
   useEffect(() => {
     document.title = "Forum";
     get("/api/stories").then((storyObjs) => {
@@ -16,7 +15,6 @@ const Forum = () => {
     });
   }, []);
 
-  
   const addNewStory = (storyObj) => {
     setStories([storyObj].concat(stories));
   };
@@ -29,18 +27,26 @@ const Forum = () => {
         key={`Card_${storyObj._id}`}
         _id={storyObj._id}
         creator_name={storyObj.creator_name}
+        creator_id={storyObj.creator_id}
+        userId={props.userId}
         content={storyObj.content}
       />
     ));
   } else {
-    storiesList = <div>No posts :( </div>;
+    storiesList = <div> No posts :( </div>;
   }
   return (
     <>
-      <NewStory addNewStory={addNewStory} />
+      {props.userId && <NewStory addNewStory={addNewStory} />}
       {storiesList}
     </>
   );
+  // return (
+  //   <>
+  //     <NewStory addNewStory={addNewStory} />
+  //     {storiesList}
+  //   </>
+  // );
 };
 
 export default Forum;
