@@ -3,7 +3,7 @@
   font-family: "Open Sans";
   font-size: 14px;
   padding: var(--s) var(--m);
-  border-radius: 10%;
+  /* border-radius: 10%; */
   left: 40px;
   right: 40px;
 }

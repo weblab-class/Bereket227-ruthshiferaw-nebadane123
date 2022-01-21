@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Router } from "@reach/router";
 import NotFound from "./pages/NotFound.js";
 // import Skeleton from "./pages/Skeleton.js";
-import CollgeInfo from "./pages/CollegeInfo.js";
+// import CollgeInfo from "./pages/CollegeInfo.js";
 import Home from "./pages/Home.js";
 import NavBar from "./modules/NavBar.js";
 import Columbia from "./pages/Columbia.js";
@@ -55,7 +55,7 @@ const App = () => {
       <Router>
         <Home path="/" handleLogin={handleLogin} handleLogout={handleLogout} userId={userId} />
         <CollegeInfo path="/CollegeInfo" component={CollegeInfo} />
-        <Forum path="/Forum/" component={Forum} />
+        <Forum path="/Forum/" component={Forum} userId={userId}/>
         <Columbia path="/Columbia" component={Columbia} />
         <Harvard path="/Harvard" component={Harvard} />
         <MIT path="/MIT" />

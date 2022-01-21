@@ -2,24 +2,23 @@ import React, { useState } from "react";
 import { post } from "../../utilities";
 import "./NewPost.css";
 
+const NewPost = (props) => {
+  const [value, setValue] = useState("");
 
-
-const NewPost=(props) => {
- const [value, setValue] = useState("");
- const handleChange = (event) => {
-     setValue(event.target.value);
- };
- const handleSubmit = (event)=> {
+  const handleChange = (event) => {
+    setValue(event.target.value);
+  };
+  const handleSubmit = (event) => {
     event.preventDefault();
     props.onSubmit && props.onSubmit(value);
     setValue("");
- };
+  };
 
- return (
+  return (
     <div className="u-flex">
       <input
         type="text"
-        // placeholder={props.defaultText}
+        placeholder={props.defaultText}
         value={value}
         onChange={handleChange}
         className="NewPostInput-input"
@@ -32,32 +31,30 @@ const NewPost=(props) => {
       >
         Submit
       </button>
-    </div>);
+    </div>
+  );
 };
-     
- 
 
 const NewStory = (props) => {
-    const addPost = (value) => {
-      const body = { content: value };
-      post("/api/story", body).then((story) => {
-          props.addNewPost(story);
-      });
-    };
-  
-    return <NewPost defaultText="Post Questions/Thoughts Here" onSubmit={addPost} />;
+  const addStory = (value) => {
+    const body = { content: value };
+    post("/api/story", body).then((story) => {
+      props.addNewStory(story);
+    });
   };
 
-  const NewComment = (props) => {
-    const addComment = (value) => {
-      const body = {parent: props.storyId, content: value };
-      post("/api/comment", body).then((comment) => {
-          props.addNewComment(comment);
-      });
-    };
-  
-    return <NewPost defaultText="Comment Here!" onSubmit={addComment} />;
+  return <NewPost defaultText="Post Questions/Thoughts Here" onSubmit={addStory} />;
+};
+
+const NewComment = (props) => {
+  const addComment = (value) => {
+    const body = { parent: props.storyId, content: value };
+    post("/api/comment", body).then((comment) => {
+      props.addNewComment(comment);
+    });
   };
 
-  export {NewStory, NewComment};
-  
+  return <NewPost defaultText="Comment Here!" onSubmit={addComment} />;
+};
+
+export { NewComment, NewStory };
