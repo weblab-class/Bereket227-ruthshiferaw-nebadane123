@@ -43,7 +43,7 @@ router.post("/initsocket", (req, res) => {
 // |------------------------------|
 
 const Story = require("./models/story");
-const Comment = require("./models/comment")
+const Comment = require("./models/comment");
 
 router.get("/stories", (req, res) => {
   Story.find({})
