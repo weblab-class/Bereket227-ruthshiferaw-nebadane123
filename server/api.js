@@ -34,7 +34,8 @@ router.get("/whoami", (req, res) => {
 
 router.post("/initsocket", (req, res) => {
   // do nothing if user not logged in
-  if (req.user) socketManager.addUser(req.user, socketManager.getSocketFromSocketID(req.body.socketid));
+  if (req.user)
+    socketManager.addUser(req.user, socketManager.getSocketFromSocketID(req.body.socketid));
   res.send({});
 });
 
@@ -46,8 +47,7 @@ const Story = require("./models/story");
 const Comment = require("./models/comment");
 
 router.get("/stories", (req, res) => {
-  Story.find({})
-    .then((stories) => res.send(stories));
+  Story.find({}).then((stories) => res.send(stories));
 });
 
 router.post("/story", auth.ensureLoggedIn, (req, res) => {
@@ -76,7 +76,6 @@ router.post("/comment", auth.ensureLoggedIn, (req, res) => {
 
   newComment.save().then((comment) => res.send(comment));
 });
-
 
 // anything else falls to this "not found" case
 router.all("*", (req, res) => {
