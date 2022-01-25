@@ -12,22 +12,22 @@ export const Vlogs = () => {
   const [pdfFile, setPdfFile] = useState(null);
   const [pdfFileError, setPdfFileError] = useState("");
   const [viewPdf, setViewPdf] = useState(null);
+  const defaultLayoutPluginInstance = defaultLayoutPlugin();
 
   const fileType = ["application/pdf"];
   const handlePdfFileChange = (e) => {
     let selectedFile = e.target.files[0];
     if (selectedFile) {
-      if (selectedFile && fileType.includes(selectedFle.type)) {
+      if (selectedFile && fileType.includes(selectedFile.type)) {
         let reader = new FileReader();
         reader.readAsDataURL(selectedFile);
         reader.onloadend = (e) => {
           setPdfFile(e.target.result);
           setPdfFileError("");
-          console.log(e.target.result);
         };
       } else {
-        setPdfFileError("Please select valid pdf file");
         setPdfFile(null);
+        setPdfFileError("Please select valid pdf file");
       }
     } else {
       console.log("select your file");
@@ -50,12 +50,12 @@ export const Vlogs = () => {
         <form className="form-group" onChange={handlePdfFileSubmit}>
           <input type="file" className="form-group" required onChange={handlePdfFileChange} />
           {pdfFileError && <div className="error-msg">{pdfFileError}</div>}
+          <br></br>
+          <br></br>
+          <button type="Submit" className="btn">
+            UPLOAD
+          </button>
         </form>
-
-        <br></br>
-        <button type="Submit" className="btn">
-          UPLOAD
-        </button>
         <br></br>
         <label className="title">
           <h4> View PDF</h4>
