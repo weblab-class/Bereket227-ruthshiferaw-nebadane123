@@ -7,7 +7,7 @@ import "./MIT.css";
 
 const MIT = () => {
   return (
-    <div>
+    <div className="whole">
       <img className="MITimg" src={MITpic1} />
       <div className="title">MIT</div>
       <div className="list">
