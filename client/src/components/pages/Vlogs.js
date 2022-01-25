@@ -49,6 +49,7 @@ export const Vlogs = () => {
       <div className="container">
         <form className="form-group" onChange={handlePdfFileSubmit}>
           <input type="file" className="form-group" required onChange={handlePdfFileChange} />
+          {pdfFileError && <div className="error-msg">{pdfFileError}</div>}
         </form>
 
         <br></br>
@@ -69,13 +70,14 @@ export const Vlogs = () => {
           }}
           className="pdf-container"
         >
-          {pdfFile && (
+          {viewPdf && (
             <>
               <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
-                <Viewer fileUrl="/assets/pdf-open-parameters.pdf" />
+                <Viewer fileUrl={viewPdf} plugins={[defaultLayoutPluginInstance]} />
               </Worker>
             </>
           )}
+          {!viewPdf && <>No pdf file selected</>}
         </div>
       </div>
     </>
