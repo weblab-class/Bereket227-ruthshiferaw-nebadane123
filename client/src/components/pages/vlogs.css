@@ -9,9 +9,14 @@
   margin-left: 60px;
 }
 .form-group {
-  margin-left: 100px;
+  margin-left: 80px;
   font-size: medium;
 }
 .btn {
-  margin-left: 100px;
+  margin-left: 80px;
+}
+.select {
+  margin-left: 250px;
+  font-size: medium;
+  margin-top: 250px;
 }
