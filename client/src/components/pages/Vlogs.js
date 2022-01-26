@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "@reach/router";
 import NavBar from "../modules/NavBar";
 import { Viewer } from "@react-pdf-viewer/core";
 import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout";
-import { worker } from "@react-pdf-viewer/core";
+import { Worker } from "@react-pdf-viewer/core";
 import "@react-pdf-viewer/default-layout/lib/styles/index.css";
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import "./vlogs.css";
@@ -22,7 +22,7 @@ export const Vlogs = () => {
         let reader = new FileReader();
         reader.readAsDataURL(selectedFile);
         reader.onloadend = (e) => {
-          setPdfFile(e.target.result);
+          setViewPdf(e.target.result);
           setPdfFileError("");
         };
       } else {
@@ -37,16 +37,22 @@ export const Vlogs = () => {
 
   const handlePdfFileSubmit = (e) => {
     e.preventDefault();
-    if (pdfFile !== null) {
-      setViewPdf(pdfFile);
-    } else {
-      setViewPdf(null);
-    }
+    console.log(pdfFile);
+    // if (pdfFile !== null) {
+    //   setViewPdf(pdfFile);
+    // } else {
+    //   setViewPdf(null);
+    // }
   };
+
+  useEffect(() => {
+    console.log(pdfFile);
+  }, [pdfFile]);
 
   return (
     <>
       <div className="container">
+        <h3 className="title">Please post usefull pdf files here and comment!</h3>
         <form className="form-group" onChange={handlePdfFileSubmit}>
           <input type="file" className="form-group" required onChange={handlePdfFileChange} />
           {pdfFileError && <div className="error-msg">{pdfFileError}</div>}
@@ -56,7 +62,7 @@ export const Vlogs = () => {
             UPLOAD
           </button>
         </form>
-        <br></br>
+
         <label className="title">
           <h4> View PDF</h4>
         </label>
