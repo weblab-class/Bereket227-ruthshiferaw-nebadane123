@@ -73,6 +73,8 @@ Note: we'll be getting to this in lecture in week 2, so don't worry if you don't
 ## Edit at your own risk
 
 To create the forum page, we used many lines of code from the catbook feed code, such as code for the Card, Single Story, Single Comment, Comments Block, and New Post Input compnents. 
+ 
+To create the resources page, we used the guide from npmjs.com on the react-pdf section. 
   
 the following files students do not need to edit. feel free to read them if you would like.
 
