@@ -1,8 +1,12 @@
 .Card-container{
     background-color: lightgray;
     border: gray;
-    /* border-radius: 10%; */
-    justify-content: center;
+    margin-top:2%;
+    /* margin-left: 0.5%;
+    margin-right: 0.5%; */
+    /* border-radius: 2%; */
+    /* padding: 3%; */
+    /* justify-content: center; */
 }
 
 
@@ -16,21 +20,43 @@
   }
   
   .Card-storyUser {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
+    /* margin-left: 1%; */
+    padding: var(--s);
+    
+    /* margin-bottom: 12%; */
   }
   
   .Card-storyContent {
-    font-size: 40px;
+    font-size: 18px;
     margin: var(--s) 0 0;
+    padding-left: var(--s);
   }
   
   .Card-commentSection {
     background-color: var(--grey);
     border-top: 1px solid var(--darkgrey);
+    border-bottom-left-radius: 2%;
   }
   
   .Card-commentBody {
     margin: 0 0 var(--s);
+  }
+
+  .thumbs-up {
+    position: center;
+    /* bottom: 8px;
+    right: 16px; */
+    width: 100%;
+    height: auto;
+  }
+
+  .reaction-container {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    width: 100px;
+    height: 100px;
   }
   

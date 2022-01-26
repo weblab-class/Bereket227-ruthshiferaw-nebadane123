@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import SingleStory from "./SingleStory.js";
 import CommentsBlock from "./CommentsBlock.js";
 import { get } from "../../utilities";
+// import ThumbsUp from "./thumbsup.png";
 // import {NewStory} from
 import "./Card.css";
 
@@ -20,7 +21,9 @@ const Card = (props) => {
 
   return (
     <div className="Card-container">
-      <SingleStory _id={props._id} creator_name={props.creator_name} content={props.content} />
+      <SingleStory className="Card-story" _id={props._id} creator_name={props.creator_name} content={props.content} />
+      {/* <img className= "bottom-right" src={ThumbsUp} /> */}
+      {/* </SingleStory> */}
       <CommentsBlock story={props} comments={comments} addNewComment={addNewComment} />
     </div>
   );
