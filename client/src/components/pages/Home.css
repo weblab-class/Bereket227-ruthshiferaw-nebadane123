@@ -1,74 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Petrona:wght@300&family=Roboto:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Petrona:wght@300&family=Roboto:wght@700&display=swap");
 
-.Home-img{
-position: absolute;
-width: 1260px;
-height: 423px;
-left: 0px;
-top: 0 px;
-    /* display: block;
+.Home-img {
+  position: absolute;
+  width: 1260px;
+  height: 423px;
+  left: 0px;
+  top: 0 px;
+  /* display: block;
     float: none;
     /* width: 90%; */
-    /* object-fit: contain; */
-    /* right: -50 px;
+  /* object-fit: contain; */
+  /* right: -50 px;
     left: -50 px; */
-    /* object-position: 100%;
+  /* object-position: 100%;
     position: fixed;
     max-width: 100%;
 max-height: 100vh; */
-/* width: 250 px;
-margin: 0%; */ 
-/* width: 100vw;
+  /* width: 250 px;
+margin: 0%; */
+  /* width: 100vw;
     height: auto;
     max-width: none;
     max-height: 100vh;
     object-fit: contain; */
-    /* margin-left: .5%; */
+  /* margin-left: .5%; */
+}
 
-  }
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
 
-  .top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-  }
-
-  .centered {
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    /* bottom: 50%; */
-    transform: translate(-50%, -50%);
-    /* font: "Petrona";
+.centered {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  /* bottom: 50%; */
+  transform: translate(-50%, -50%);
+  /* font: "Petrona";
     color: white;
     font-size: x-large; */
-    font-family: Petrona;
-font-style: normal;
-font-weight: bold;
-font-size: 55px;
-color: white;
-/* line-height: 62px; */
-  }
-
-.title-container{
-    background-color: rgb(158, 154, 154);
-    border-radius: 3%;
-    /* opacity: 0.2%; */
+  font-family: Petrona;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  color: rgb(255, 255, 255);
+  /* line-height: 62px; */
 }
 
-  .lower-centered {
-    z-index: 30;
-    position: absolute;
-    top: 300px ;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: Petrona;
-    font-weight: bold;
-    font-size: 30px;
-    color: white;
+.title-container {
+  background-color: rgb(60, 60, 60);
+
+  border-radius: 3%;
+  /* opacity: 0.2%; */
 }
 
-  .Homepic-container{
-    position: relative;
-    text-align: center;
-  }
+.lower-centered {
+  z-index: 30;
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Petrona;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.Homepic-container {
+  position: relative;
+  text-align: center;
+}
+.homepagecontainer {
+  background-color: black;
+}

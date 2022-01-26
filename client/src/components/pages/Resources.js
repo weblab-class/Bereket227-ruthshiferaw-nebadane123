@@ -9,7 +9,7 @@ import NavBar from "../modules/NavBar";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 import "./vlogs.css";
 
-export const Vlogs = () => {
+export const Resources = () => {
   const [pdfFile, setPdfFile] = useState(null);
   const [pdfFileError, setPdfFileError] = useState("");
   const [viewPdf, setViewPdf] = useState(null);
@@ -22,13 +22,6 @@ export const Vlogs = () => {
     let selectedFile = e.target.files[0];
     if (selectedFile) {
       if (selectedFile && fileType.includes(selectedFile.type)) {
-        // let reader = new FileReader();
-        // reader.readAsDataURL(selectedFile);
-        // reader.onloadend = (e) => {
-        //   // console.log(e.target.result);
-        //   setViewPdf(e.target.result);
-        //   setPdfFileError("");
-        // };
         selectedFile.arrayBuffer().then((pdfBuffer) => {
           const pdfArray = new Uint8Array(pdfBuffer);
           // console.log(pdfArray);
@@ -52,11 +45,6 @@ export const Vlogs = () => {
   const handlePdfFileSubmit = (e) => {
     e.preventDefault();
     console.log(pdfFile);
-    // if (pdfFile !== null) {
-    //   setViewPdf(pdfFile);
-    // } else {
-    //   setViewPdf(null);
-    // }
   };
 
   useEffect(() => {
@@ -66,7 +54,7 @@ export const Vlogs = () => {
   return (
     <>
       <div className="container">
-        <h3 className="title">Please post usefull pdf files here and comment!</h3>
+        <h3 className="title">Please post useful pdf files here!</h3>
         <form className="form-group" onChange={handlePdfFileSubmit}>
           <input type="file" className="form-group" required onChange={handlePdfFileChange} />
           {pdfFileError && <div className="error-msg">{pdfFileError}</div>}
@@ -82,9 +70,9 @@ export const Vlogs = () => {
         </label>
         <div
           style={{
-            border: "10px solid rgba(0, 0, 0, 0.3)",
-            height: "550px",
-            width: "50%",
+            border: "20px solid rgba(0, 0, 0, 0.3)",
+            height: "800px",
+            width: "70%",
             align: "center",
             marginLeft: "300px",
           }}
@@ -126,4 +114,4 @@ export const Vlogs = () => {
   );
 };
 
-export default Vlogs;
+export default Resources;

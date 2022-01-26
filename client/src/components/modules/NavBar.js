@@ -13,12 +13,24 @@ const NavBar = () => {
   return (
     <nav className="NavBar-container">
       <span>
-        <div className="NavBar-title"> ICAN </div>
-        <div className="Link-title">
-          <Link to="/"> Home </Link>
-          <Link to="/CollegeInfo/"> College Info </Link>
-          <Link to="/Forum/"> Forum </Link>
-          <Link to="/Vlogs/"> Vlogs </Link>
+        <div className="NavBar-title u-inlineBlock"> ICAN </div>
+        <div className="Link-container u-inlineBlock">
+          <Link to="/" className="Link-title">
+            {" "}
+            Home{" "}
+          </Link>
+          <Link to="/CollegeInfo/" className="Link-title">
+            {" "}
+            College Info{" "}
+          </Link>
+          <Link to="/Forum/" className="Link-title">
+            {" "}
+            Forum{" "}
+          </Link>
+          <Link to="/Resources/" className="Link-title">
+            {" "}
+            Resources{" "}
+          </Link>
         </div>
       </span>
     </nav>

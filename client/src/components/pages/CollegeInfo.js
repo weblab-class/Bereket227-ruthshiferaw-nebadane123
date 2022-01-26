@@ -14,51 +14,53 @@ const CollegeInfo = () => {
   document.title = "College Info";
   return (
     <>
-      <section className="collegecontainer">
-        <div className="listitle">Find colleges that fit you here</div>
-        <section className="listitem">
-          <Link to="/Columbia">
-            <img className="img" src={columbia} />
-          </Link>
+      <div className="container">
+        <section className="collegecontainer">
+          <div className="listitle">Find colleges that fit you here</div>
+          <section className="listitem">
+            <Link to="/Columbia">
+              <img className="img" src={columbia} />
+            </Link>
 
-          <div className="listname">Columbia University</div>
-        </section>
-        <section className="listitem">
-          <Link to="/Harvard">
-            <img className="img" src={harvard} />
-          </Link>
+            <div className="listname">Columbia University</div>
+          </section>
+          <section className="listitem">
+            <Link to="/Harvard">
+              <img className="img" src={harvard} />
+            </Link>
 
-          <div className="listname">Harvard University</div>
-        </section>
-        <section className="listitem">
-          <Link to="/MIT">
-            <img className="img" src={MIT} />
-          </Link>
+            <div className="listname">Harvard University</div>
+          </section>
+          <section className="listitem">
+            <Link to="/MIT">
+              <img className="img" src={MIT} />
+            </Link>
 
-          <div className="listname">MIT</div>
-        </section>
-        <section className="listitem">
-          <Link to="/Princeton">
-            <img className="img" src={princeton} />
-          </Link>
+            <div className="listname">MIT</div>
+          </section>
+          <section className="listitem">
+            <Link to="/Princeton">
+              <img className="img" src={princeton} />
+            </Link>
 
-          <div className="listname">Princeton University</div>
-        </section>
-        <section className="listitem">
-          <Link to="/Stanford">
-            <img className="img" src={stanford} />
-          </Link>
+            <div className="listname">Princeton University</div>
+          </section>
+          <section className="listitem">
+            <Link to="/Stanford">
+              <img className="img" src={stanford} />
+            </Link>
 
-          <div className="listname">Stanford University</div>
-        </section>
-        <section className="listitem">
-          <Link to="/Yale">
-            <img className="img" src={yale} />
-          </Link>
+            <div className="listname">Stanford University</div>
+          </section>
+          <section className="listitem">
+            <Link to="/Yale">
+              <img className="img" src={yale} />
+            </Link>
 
-          <div className="listname">Yale University</div>
+            <div className="listname">Yale University</div>
+          </section>
         </section>
-      </section>
+      </div>
     </>
   );
 };
