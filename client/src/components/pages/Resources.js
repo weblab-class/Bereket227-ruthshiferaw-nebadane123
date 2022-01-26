@@ -9,7 +9,7 @@ import NavBar from "../modules/NavBar";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 import "./vlogs.css";
 
-export const Vlogs = () => {
+export const Resources = () => {
   const [pdfFile, setPdfFile] = useState(null);
   const [pdfFileError, setPdfFileError] = useState("");
   const [viewPdf, setViewPdf] = useState(null);
@@ -126,4 +126,4 @@ export const Vlogs = () => {
   );
 };
 
-export default Vlogs;
+export default Resources;

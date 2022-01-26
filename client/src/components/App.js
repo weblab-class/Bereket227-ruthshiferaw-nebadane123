@@ -19,7 +19,7 @@ import { socket } from "../client-socket.js";
 import { get, post } from "../utilities";
 import CollegeInfo from "./pages/CollegeInfo.js";
 import Forum from "./pages/Forum.js";
-import Vlogs from "./pages/Vlogs.js";
+import Resources from "./pages/Resources.js";
 
 /**
  * Define the "App" component
@@ -57,7 +57,7 @@ const App = () => {
         <Home path="/" handleLogin={handleLogin} handleLogout={handleLogout} userId={userId} />
         <CollegeInfo path="/CollegeInfo" component={CollegeInfo} />
         <Forum path="/Forum/" component={Forum} userId={userId} />
-        <Vlogs path="/Vlogs/" component={Vlogs} userId={userId} />
+        <Resources path="/Resources/" component={Resources} userId={userId} />
         <Columbia path="/Columbia" component={Columbia} />
         <Harvard path="/Harvard" component={Harvard} />
         <MIT path="/MIT" />
