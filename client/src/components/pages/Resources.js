@@ -9,7 +9,7 @@ import NavBar from "../modules/NavBar";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 import "./vlogs.css";
 
-export const Vlogs = () => {
+export const Resources = () => {
   const [pdfFile, setPdfFile] = useState(null);
   const [pdfFileError, setPdfFileError] = useState("");
   const [viewPdf, setViewPdf] = useState(null);
@@ -66,7 +66,7 @@ export const Vlogs = () => {
   return (
     <>
       <div className="container">
-        <h3 className="title">Please post usefull pdf files here and comment!</h3>
+        <h3 className="title">Please post usefull pdf files here!</h3>
         <form className="form-group" onChange={handlePdfFileSubmit}>
           <input type="file" className="form-group" required onChange={handlePdfFileChange} />
           {pdfFileError && <div className="error-msg">{pdfFileError}</div>}
@@ -126,4 +126,4 @@ export const Vlogs = () => {
   );
 };
 
-export default Vlogs;
+export default Resources;
