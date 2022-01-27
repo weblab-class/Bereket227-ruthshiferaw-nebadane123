@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Router } from "@reach/router";
 import NotFound from "./pages/NotFound.js";
-// import Skeleton from "./pages/Skeleton.js";
-// import CollgeInfo from "./pages/CollegeInfo.js";
 import Home from "./pages/Home.js";
 import NavBar from "./modules/NavBar.js";
 import Columbia from "./pages/Columbia.js";

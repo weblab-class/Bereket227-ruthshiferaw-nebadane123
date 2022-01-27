@@ -13,7 +13,7 @@ const Home = ({ userId, handleLogin, handleLogout }) => {
     <div className="homepagecontainer">
       <div className="Homepic-container">
         <img className="Home-img" src={homepic1} />
-        {/* <NavBar/> */}
+
         <div className="top-right">
           {userId ? (
             <GoogleLogout
@@ -36,7 +36,7 @@ const Home = ({ userId, handleLogin, handleLogout }) => {
           We're here to give you tips and tricks on how to successfully create a college application
           as an international student
         </div>
-        {/* <div> hi! </div> */}
+
         <div className="homepagecontainer">
           <Testimonials />
         </div>

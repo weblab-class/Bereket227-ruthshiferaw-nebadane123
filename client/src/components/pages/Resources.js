@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "@reach/router";
 import NavBar from "../modules/NavBar";
-// import { Viewer } from "@react-pdf-viewer/core";
-// import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout";
-// import { Worker } from "@react-pdf-viewer/core";
-// import "@react-pdf-viewer/default-layout/lib/styles/index.css";
-// import "@react-pdf-viewer/core/lib/styles/index.css";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 import "./vlogs.css";
 
@@ -15,7 +10,6 @@ export const Resources = () => {
   const [viewPdf, setViewPdf] = useState(null);
   const [pageNum, setPageNum] = useState(1);
   const [maxPageNum, setMaxPageNum] = useState(2);
-  // const defaultLayoutPluginInstance = defaultLayoutPlugin();
 
   const fileType = ["application/pdf"];
   const handlePdfFileChange = (e) => {
@@ -24,7 +18,7 @@ export const Resources = () => {
       if (selectedFile && fileType.includes(selectedFile.type)) {
         selectedFile.arrayBuffer().then((pdfBuffer) => {
           const pdfArray = new Uint8Array(pdfBuffer);
-          // console.log(pdfArray);
+
           setViewPdf(pdfArray);
           setPdfFileError("");
         });
